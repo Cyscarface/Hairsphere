@@ -1,0 +1,7 @@
+{
+  "name": "HairSphere",
+  "description": "A comprehensive, premium hair growth and maintenance application featuring daily routine tracking, educational resources, progress monitoring, and an AI-powered hair consultant. Designed with a sleek Mauve, Soft Pink, Gold, and Navy aesthetic.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

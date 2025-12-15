@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HairSphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // "Opulence & Premium" Palette Mapping
+              // Primary: #B7586A (Mauve/Berry)
+              // Secondary Accent: #FCD1D9 (Soft Pink/Rose)
+              // Background: #f9f5f6 (Soft Rose White)
+              // Navy: #131c25 (Dark Text/Headings)
+              // Gold: #e8dfc4 (Rich Accent)
+              // Bronze: #856f5c (Contrast)
+              
+              peach: {
+                50: '#fcf7f8',  // Ultra light rose background
+                100: '#f9eef1', // Very light rose for hovers
+                200: '#FCD1D9', // NEW COLOR: Soft Pink (Borders, Secondary Backgrounds)
+                300: '#e8dfc4', // Champagne Gold (shifted here for distinct accents)
+                400: '#d68c9a', // Light Mauve Bridge
+                500: '#B7586A', // User Primary Mauve
+                600: '#964253', // Deep Mauve/Berry
+                700: '#856f5c', // Bronze (Contrast Text)
+                800: '#131c25', // Navy (Darkest Text)
+                900: '#0b1116', // Pitch Navy
+              },
+              gray: {
+                50: '#fcf7f8',
+                100: '#f9eef1', 
+                200: '#eadde1',
+                300: '#cbb0b5',
+                400: '#9e8a8e', 
+                500: '#756568',
+                600: '#5c4e51',
+                700: '#856f5c',
+                800: '#131c25',
+                900: '#0b1116',
+              },
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            boxShadow: {
+              'premium': '0 4px 20px -2px rgba(183, 88, 106, 0.15)',
+            }
+          },
+        },
+      };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fcf7f8;
+        color: #131c25;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+        color: #131c25;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f9eef1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FCD1D9; /* Soft Pink scrollbar */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #B7586A;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "recharts": "https://esm.sh/recharts@^3.5.1",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
